@@ -13,7 +13,7 @@ public class MathClass {
     public static void relationOperators() {
         boolean isPerson = true;
 
-        if (isPerson == true) {
+        if (isPerson) {
             System.out.println("You are a person");
         }
     }
@@ -32,7 +32,7 @@ public class MathClass {
 
         System.out.println(Math.sqrt(25));
 
-        System.out.println(getRandomNumber(10,20));
+       // System.out.println(getRandomNumber(10,20));
 
     }
 

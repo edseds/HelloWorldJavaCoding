@@ -1,19 +1,27 @@
 package com;
 
+import java.util.Scanner;
+
 public class HelloWorld {
     public static void main(String[] args) {
 
+        //TODO dsasadasd
+        //FIXME sasa
         //1. Hello World
-
         //Output
-        //System.out.println("Hello World!!!!");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Hello " + sc.nextLine() + " !!!!!!");
+        System.out.println("Hello World!!!!");
 
         //Input
         //Scanner sc = new Scanner(System.in);
         //System.out.println("Hello " + sc.nextLine() + " !!!!!!");
 
         //2. Variables
-        //Variables.runVariables();
+        //Variables.runVariabsales();
+
+
+        /*
         PrimitiveTypes.intValues();
         PrimitiveTypes.byteValue();
         PrimitiveTypes.shortValues();
@@ -24,5 +32,7 @@ public class HelloWorld {
 
         MathClass.priorities();
         MathClass.mathClass();
+
+         */
     }
 }
