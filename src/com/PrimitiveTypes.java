@@ -9,18 +9,25 @@ public class PrimitiveTypes {
         int minValue = Integer.MIN_VALUE;
         int maxValue = Integer.MAX_VALUE;
 
+        int someValue;
+
+        var number = 6;
+
         //sout shortcut
         System.out.println("Minimum value: " + minValue);
         //Underflow or Overflow. Put larger than the maximum value, you will get overflow. And vice versa.
         //????
-        //System.out.println("Max value: " + (maxValue + 1));
-
         System.out.println("Max value: " + maxValue);
+        System.out.println("Max value: " + (maxValue + 20));
+        ///System.out.println();
+
+
+        //System.out.println("Max value: " + maxValue);
 
         int myValueUnderScore = 1_14_15;
         System.out.println(myValueUnderScore);
 
-        //long longValue = 9_32_3231_31_323;
+        long longValue = 9_32_3231_31_323L;
     }
 
     public static void castingValues()
