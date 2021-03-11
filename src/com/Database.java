@@ -24,19 +24,19 @@ public class Database {
 
     public static void insertExample() throws SQLException {
         String sql = "INSERT INTO shoes(ID,Name,Size,Colour,Brand) VALUES (1235,'Riga',34,'Red','Latvia')";
-        stmt.execute(sql);
+        System.out.println("Inserted: " + stmt.executeUpdate(sql));
     }
 
     public static void updateExample() throws SQLException {
         String sql = "UPDATE shoes\n" +
                 "SET Name = 'Riga1'\n" +
                 "WHERE Brand = 'Latvia'";
-        stmt.execute(sql);
+        System.out.println("Updated: " + stmt.executeUpdate(sql));
     }
 
     public static void deleteExample() throws SQLException {
         String sql = "DELETE FROM shoes WHERE ID=1234";
-        stmt.execute(sql);
+        System.out.println("Deleted: " + stmt.executeUpdate(sql));
     }
 
     public static void joinExample() throws SQLException {
@@ -66,7 +66,7 @@ public class Database {
             updateExample();
             deleteExample();
             joinExample();
-            insertWithValue(432,"Riga5",32,"Grey","Latvia");
+            insertWithValue(432, "Riga5", 32, "Grey", "Latvia");
 
             stmt.close();
             conn.close();
